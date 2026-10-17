@@ -1,0 +1,114 @@
+/* ComplimentsSection.css - Blue Floral Best Compliments Section */
+
+.compliments-section {
+  position: relative;
+  width: 100%;
+  padding: 18px 16px 26px;
+  display: flex;
+  justify-content: center;
+}
+
+.compliments-card {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 60%, #e0f2fe 100%);
+  border: 1.5px solid #bfdbfe;
+  padding: 34px 20px 30px;
+  text-align: center;
+  box-shadow:
+    0 12px 35px rgba(37, 99, 235, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.comp-ornament {
+  color: #38bdf8;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  margin-bottom: 8px;
+}
+
+.compliments-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.comp-line {
+  background: #93c5fd;
+  width: 38px;
+  height: 1px;
+  display: inline-block;
+}
+
+.comp-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #475569;
+  margin: 0;
+}
+
+.comp-family-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.comp-member {
+  text-align: center;
+  width: 100%;
+}
+
+.comp-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  letter-spacing: 0.5px;
+  margin: 0 0 3px;
+}
+
+.comp-role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #2563eb;
+  margin: 0;
+}
+
+.comp-divider {
+  width: 30px;
+  height: 1px;
+  background: #bfdbfe;
+  margin: 10px auto 0;
+  opacity: 0.8;
+}
+
+.near-dear-banner {
+  margin-top: 14px;
+}
+
+.comp-stars {
+  color: #38bdf8;
+  font-size: 0.95rem;
+  letter-spacing: 4px;
+  margin-bottom: 6px;
+}
+
+.near-dear-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1e40af;
+}

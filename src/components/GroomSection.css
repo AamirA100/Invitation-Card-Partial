@@ -1,0 +1,69 @@
+/* GroomSection.css - Soft Blue Luxury Groom Card */
+
+.groom-section {
+  position: relative;
+  width: 100%;
+  padding: 10px 16px 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.groom-card {
+  /* Inherits .wedding-card styles from BrideSection.css */
+}
+
+.groom-display-name {
+  font-size: 42px;
+}
+
+/* Bride-Groom Divider between cards */
+.bride-groom-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  padding: 10px 16px;
+}
+
+.divider-flourish {
+  flex: 1;
+  max-width: 100px;
+  height: 24px;
+}
+
+.flourish-svg {
+  width: 100%;
+  height: auto;
+}
+
+.flourish-reversed {
+  transform: scaleX(-1);
+}
+
+.divider-amp-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0%, #eff6ff 70%, #dbeafe 100%);
+  border: 1.5px solid #93c5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 16px rgba(37, 99, 235, 0.15),
+    inset 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+.ampersand-char {
+  font-family: 'Great Vibes', 'Alex Brush', cursive;
+  font-size: 32px;
+  color: #2563eb;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 380px) {
+  .groom-display-name {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,156 @@
+/* IslamicQuote.css - Blue Floral Spiritual Hadith Card */
+
+.quote-section {
+  position: relative;
+  width: 100%;
+  padding: 16px 16px 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-card {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 60%, #e0f2fe 100%);
+  border: 1.5px solid #bfdbfe;
+  box-shadow:
+    0 14px 38px rgba(37, 99, 235, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.quote-divine-aura {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(219, 234, 254, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.is-focused .quote-divine-aura {
+  opacity: 1;
+}
+
+.quote-islamic-arch {
+  width: 110px;
+  margin: 0 auto 12px;
+}
+
+.arch-svg {
+  width: 100%;
+  height: auto;
+}
+
+.quote-hadith-lead {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  font-size: 1.05rem;
+  color: #64748b;
+  margin-bottom: 12px;
+  direction: rtl;
+  letter-spacing: 0.3px;
+}
+
+.quote-arabic-main {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #172554;
+  line-height: 1.45;
+  margin: 8px 0 16px;
+  text-shadow: 0 1px 4px rgba(37, 99, 235, 0.12);
+  letter-spacing: 0.5px;
+}
+
+.quote-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 14px auto 16px;
+  max-width: 180px;
+}
+
+.quote-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #93c5fd, transparent);
+}
+
+.quote-diamond {
+  color: #38bdf8;
+  font-size: 12px;
+}
+
+.quote-translation {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #1e3a8a;
+  line-height: 1.55;
+  margin: 0 auto 18px;
+  max-width: 330px;
+}
+
+.quote-attribution-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(219, 234, 254, 0.5);
+  border: 1px solid #93c5fd;
+  border-radius: 20px;
+  padding: 5px 16px;
+}
+
+.attr-star {
+  font-size: 9px;
+  color: #2563eb;
+}
+
+.attr-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1e40af;
+}
+
+.quote-corner-flower {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  pointer-events: none;
+}
+
+.quote-corner-flower.bl {
+  bottom: 8px;
+  left: 8px;
+}
+
+.quote-corner-flower.br {
+  bottom: 8px;
+  right: 8px;
+}
+
+.quote-blossom-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.quote-blossom-svg.is-mirrored {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 380px) {
+  .quote-arabic-main {
+    font-size: 1.6rem;
+  }
+  .quote-translation {
+    font-size: 1.05rem;
+  }
+}

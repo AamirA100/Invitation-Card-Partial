@@ -1,0 +1,265 @@
+/* App.css - Digital Wedding Invitation Design System (Blue Watercolor Floral Theme) */
+
+:root {
+  --color-primary: #1e40af;
+  --color-primary-dark: #172554;
+  --color-primary-light: #3b82f6;
+  --color-sky: #38bdf8;
+  --color-ice-bg: #f8fbfe;
+  --color-ice-card: #ffffff;
+  --color-border-blue: #bfdbfe;
+  --color-gold: #d4af37;
+  --color-gold-light: #fef3c7;
+  --color-text-dark: #0f172a;
+  --color-text-muted: #64748b;
+  
+  --font-script: 'Great Vibes', 'Alex Brush', cursive;
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-serif-heading: 'Cormorant Garamond', serif;
+  --font-arabic: 'Amiri', 'Traditional Arabic', serif;
+  --font-sans: 'Montserrat', 'Poppins', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: pan-y;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background-color: #060a12;
+  color: var(--color-text-dark);
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+/* App Root with Outer Desktop Night Atmosphere */
+.wedding-app-root {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(circle at center, #0c172d 0%, #060a14 70%, #020408 100%);
+  overflow-x: hidden;
+}
+
+/* Floating Ambient Blue Rose & Hydrangea Petals */
+.ambient-petals-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  overflow: hidden;
+  contain: strict;
+}
+
+.floating-petal {
+  position: absolute;
+  top: -40px;
+  animation: petalSway linear infinite;
+  transform-origin: center;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.petal-type-0 {
+  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #bae6fd 55%, #38bdf8 100%);
+  border-radius: 70% 15% 70% 15% / 75% 25% 75% 25%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.petal-type-1 {
+  background: radial-gradient(circle at 40% 30%, #f0f9ff 0%, #93c5fd 60%, #2563eb 100%);
+  border-radius: 50% 50% 50% 15% / 60% 60% 40% 20%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.petal-type-2 {
+  background: radial-gradient(circle at 30% 40%, #ffffff 0%, #e0f2fe 50%, #60a5fa 100%);
+  border-radius: 65% 35% 65% 35% / 60% 40% 60% 40%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@keyframes petalSway {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(0.85);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.85;
+  }
+  50% {
+    transform: translate3d(var(--sway-x, 22px), 52vh, 0) rotate(180deg) scale(1);
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate3d(calc(var(--sway-x, 22px) * -0.5), 105vh, 0) rotate(360deg) scale(0.85);
+    opacity: 0;
+  }
+}
+
+/* Interactive Click/Tap Floating Heart */
+.interactive-click-heart {
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  background-color: #38bdf8;
+  transform: rotate(45deg);
+  pointer-events: none;
+  z-index: 999999;
+  animation: floatHeart 1s ease-out forwards;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
+}
+
+.interactive-click-heart::before,
+.interactive-click-heart::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #38bdf8;
+  border-radius: 50%;
+}
+
+.interactive-click-heart::before {
+  top: -7px;
+  left: 0;
+}
+
+.interactive-click-heart::after {
+  top: 0;
+  left: -7px;
+}
+
+@keyframes floatHeart {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-48px) scale(1.6) rotate(45deg);
+  }
+}
+
+/* Primary Mobile Container (Max width 480px, centered on desktop) */
+.invitation-phone-container {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  background-color: #f8fbfe;
+  background-image:
+    linear-gradient(180deg, #f8fbfe 0%, #ffffff 15%, #f4f9fd 50%, #eff6ff 100%);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.75), 0 0 25px rgba(56, 189, 248, 0.18);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Main Flow Container */
+.invitation-main-flow {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 24px;
+  z-index: 50;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(219, 234, 254, 0.4) 0%, transparent 70%),
+    url('/images/blue-66KaRlnG.jpg') center/cover repeat-y;
+}
+
+/* Shared Section Layout */
+.invitation-section {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   CARD LETTERS REVEAL & SHIMMER BEAM EFFECT
+   ============================================================ */
+.wedding-card {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate3d(0, 36px, 0) scale(0.96);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+
+.wedding-card.card-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.wedding-card::after {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: 0;
+  width: 75%;
+  height: 230%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 30%,
+    rgba(224, 242, 254, 0.75) 50%,
+    rgba(255, 255, 255, 0.35) 70%,
+    transparent 100%
+  );
+  transform: translate3d(-180%, 0, 0) rotate(25deg);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 15;
+}
+
+.wedding-card.card-revealed::after {
+  animation: magicCardShine 1.35s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
+}
+
+@keyframes magicCardShine {
+  0% {
+    transform: translate3d(-180%, 0, 0) rotate(25deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate3d(240%, 0, 0) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+/* Card Reveal Shimmer Effect */
+.wedding-card > * {
+  pointer-events: auto;
+}
+
+/* Selection */
+::selection {
+  background: #bae6fd;
+  color: #172554;
+}

@@ -1,0 +1,243 @@
+/* WeddingHero.css - Blue Watercolor Floral Invitation Details Card */
+
+.details-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 16px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f9fd;
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(240, 248, 255, 0.7) 50%, rgba(255, 255, 255, 0.85) 100%),
+    url('/images/blue-66KaRlnG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.details-bg-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  height: 520px;
+  background: url('/images/ros-BmOdtvVg.png') center/contain no-repeat;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+/* Luxury Blue Watercolor Floral Card */
+.invitation-ornate-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 20px;
+  padding: 46px 24px 46px;
+  text-align: center;
+  box-shadow:
+    0 15px 45px rgba(37, 99, 235, 0.1),
+    0 4px 16px rgba(0, 0, 0, 0.04),
+    inset 0 0 0 1px rgba(186, 230, 253, 0.6);
+  border: 1px solid rgba(219, 234, 254, 0.9);
+  overflow: hidden;
+}
+
+/* Inner Dusty-Rose & Pale Gold Double Border */
+.card-inner-border {
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(217, 166, 182, 0.55);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.card-inner-border::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px solid rgba(226, 208, 166, 0.45);
+  border-radius: 9px;
+  pointer-events: none;
+}
+
+/* Corner Botanical Watercolor Graphics */
+.corner-floral {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.corner-top-left {
+  top: -2px;
+  left: -2px;
+}
+
+.corner-top-right {
+  top: -2px;
+  right: -2px;
+}
+
+.corner-bottom-left {
+  bottom: -2px;
+  left: -2px;
+}
+
+.corner-bottom-right {
+  bottom: -2px;
+  right: -2px;
+}
+
+.corner-floral-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Sacred Bismillah */
+.bismillah-wrapper {
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 4;
+}
+
+.arabic-bismillah {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #172554;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  text-shadow: 0 1px 3px rgba(37, 99, 235, 0.12);
+}
+
+.bismillah-translation {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.98rem;
+  font-style: italic;
+  color: #475569;
+  max-width: 320px;
+  margin: 0 auto 24px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 4;
+}
+
+/* Event Script Title */
+.invitation-title-block {
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 4;
+}
+
+.event-script-title {
+  font-family: 'Great Vibes', 'Alex Brush', cursive;
+  font-size: 3.1rem;
+  font-weight: 400;
+  color: #1e3a8a;
+  line-height: 1.15;
+  text-shadow: 0 2px 10px rgba(56, 189, 248, 0.2);
+}
+
+/* Invitation Lead */
+.invitation-lead-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  color: #334155;
+  line-height: 1.65;
+  letter-spacing: 0.3px;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 4;
+}
+
+.reception-tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #2563eb;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 4;
+}
+
+/* Prominent Couple Names */
+.couple-names-block {
+  margin: 10px 0 26px;
+  position: relative;
+  z-index: 4;
+}
+
+.names-couple {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.85rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.groom-highlight,
+.bride-highlight {
+  color: #172554;
+  text-shadow: 0 1px 4px rgba(37, 99, 235, 0.15);
+}
+
+.couple-ampersand {
+  font-family: 'Great Vibes', 'Alex Brush', cursive;
+  font-size: 2.4rem;
+  color: #2563eb;
+  font-weight: 400;
+}
+
+.full-names-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+  .details-section {
+    padding: 30px 12px 40px;
+  }
+  .invitation-ornate-card {
+    padding: 38px 16px 30px;
+  }
+  .arabic-bismillah {
+    font-size: 1.6rem;
+  }
+  .event-script-title {
+    font-size: 2.65rem;
+  }
+  .names-couple {
+    font-size: 2.4rem;
+    gap: 8px;
+  }
+  .corner-floral {
+    width: 72px;
+    height: 72px;
+  }
+}

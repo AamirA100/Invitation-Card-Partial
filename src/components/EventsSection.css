@@ -1,0 +1,234 @@
+/* EventsSection.css - Blue Floral Events & Venues Cards */
+
+.events-section {
+  position: relative;
+  width: 100%;
+  padding: 20px 16px 30px;
+}
+
+.events-main-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.events-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+.eyebrow-line {
+  width: 30px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #93c5fd, transparent);
+}
+
+.events-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.events-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+  color: #38bdf8;
+  font-size: 0.95rem;
+}
+
+.divider-flourish-char {
+  color: #93c5fd;
+}
+
+.divider-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #38bdf8;
+}
+
+.event-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.event-card {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 60%, #e0f2fe 100%);
+  border: 1.5px solid #bfdbfe;
+  padding: 32px 20px 28px;
+  text-align: center;
+  box-shadow:
+    0 12px 35px rgba(37, 99, 235, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.event-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(219, 234, 254, 0.6);
+  border: 1px solid #93c5fd;
+  border-radius: 20px;
+  padding: 4px 16px;
+  margin-bottom: 16px;
+}
+
+.badge-star {
+  font-size: 9px;
+  color: #2563eb;
+}
+
+.event-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #1e40af;
+  margin: 0;
+}
+
+/* Event Illustrations */
+.event-illustration {
+  margin: 10px auto 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.venue-image {
+  max-width: 88%;
+  max-height: 200px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(37, 99, 235, 0.18));
+  transition: transform 0.35s ease;
+  display: block;
+}
+
+.venue-image:hover {
+  transform: scale(1.04);
+}
+
+.event-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 16px 0 24px;
+  text-align: left;
+  padding: 0 8px;
+}
+
+.event-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.info-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+  flex-shrink: 0;
+}
+
+.svg-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.info-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 2px;
+}
+
+.info-val {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.25;
+}
+
+.info-subval {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.time-val {
+  color: #1e40af;
+}
+
+.venue-val {
+  color: #172554;
+}
+
+/* Reference Google Maps Button */
+.map-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.35);
+  transition: all 0.3s ease;
+  z-index: 6;
+  position: relative;
+}
+
+.map-btn:hover {
+  background: linear-gradient(135deg, #60a5fa 0%, #1d4ed8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.5);
+}
+
+.mini-pin-svg {
+  width: 15px;
+  height: 15px;
+}

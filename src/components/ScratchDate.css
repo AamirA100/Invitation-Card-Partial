@@ -1,0 +1,264 @@
+/* ScratchDate.css - Heart Scratch Cards & Shimmer Reveal Button */
+
+.scratch-section {
+  position: relative;
+  width: 100%;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scratch-card-container {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 60%, #e0f2fe 100%);
+  border: 1.5px solid #bfdbfe;
+  padding: 38px 18px 34px;
+  text-align: center;
+}
+
+/* Shimmer Reveal Date Button */
+.reveal-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0 20px;
+}
+
+.premium-reveal-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 34px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  box-shadow:
+    0 6px 18px rgba(37, 99, 235, 0.35),
+    0 0 12px rgba(255, 255, 255, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.premium-reveal-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #60a5fa 0%, #1d4ed8 100%);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow:
+    0 10px 22px rgba(37, 99, 235, 0.5),
+    0 0 18px rgba(186, 230, 253, 0.5);
+}
+
+.premium-reveal-btn:active:not(:disabled) {
+  transform: translateY(1px) scale(0.98);
+}
+
+.premium-reveal-btn:disabled {
+  opacity: 0.85;
+  cursor: default;
+  background: linear-gradient(135deg, #93c5fd 0%, #60a5fa 100%);
+}
+
+.premium-reveal-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 30%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.3) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translate3d(-150%, 0, 0) rotate(25deg);
+  pointer-events: none;
+  will-change: transform;
+}
+
+.premium-reveal-btn:not(:disabled):after {
+  animation: buttonPulseShimmer 3.5s linear infinite;
+}
+
+@keyframes buttonPulseShimmer {
+  0% { transform: translate3d(-150%, 0, 0) rotate(25deg); }
+  100% { transform: translate3d(280%, 0, 0) rotate(25deg); }
+}
+
+.discover-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #1d4ed8;
+  margin-bottom: 28px;
+}
+
+/* 3 Heart Scratch Cards */
+.heart-scratch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 16px;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.heart-scratch-card {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.heart-border {
+  width: 100%;
+  height: 100%;
+  clip-path: url(#heart-clip);
+  -webkit-clip-path: url(#heart-clip);
+  background: linear-gradient(135deg, #bfdbfe 0%, #60a5fa 50%, #ffffff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 6px 14px rgba(37, 99, 235, 0.25));
+}
+
+.heart-shape {
+  position: relative;
+  width: 94%;
+  height: 94%;
+  clip-path: url(#heart-clip);
+  -webkit-clip-path: url(#heart-clip);
+  background: #38bdf8;
+  background-image: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scratch-date-content {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.scratch-date-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 2px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.scratch-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(15, 23, 42, 0.45);
+  white-space: nowrap;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.scratch-date.long-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+.heart-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: url(#heart-clip);
+  -webkit-clip-path: url(#heart-clip);
+  cursor: pointer;
+  touch-action: none;
+  z-index: 5;
+}
+
+.scratched-pop {
+  transform: scale(1.08);
+}
+
+.scratch-blessing-note {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1e40af;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .heart-scratch-container {
+    gap: 8px;
+  }
+  .heart-scratch-card {
+    width: 29vw;
+    max-width: 108px;
+    height: 29vw;
+    max-height: 108px;
+  }
+  .scratch-date-sub {
+    font-size: clamp(7.5px, 2.1vw, 9px);
+    letter-spacing: 1.2px;
+  }
+  .scratch-date {
+    font-size: clamp(12.5px, 3.4vw, 16px);
+  }
+  .scratch-date.long-title {
+    font-size: clamp(9px, 2.3vw, 11px);
+    letter-spacing: -0.3px;
+  }
+}

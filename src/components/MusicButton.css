@@ -1,0 +1,75 @@
+/* MusicButton.css - Reference Floating Music Toggle Button */
+
+.floating-music-wrapper {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.music-toggle {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.42);
+  border: 1.5px solid rgba(147, 197, 253, 0.75);
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.music-toggle::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(56, 189, 248, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.music-toggle:hover {
+  background: rgba(56, 189, 248, 0.6);
+  border-color: #ffffff;
+  transform: scale(1.12);
+}
+
+.music-toggle:active {
+  transform: scale(0.95);
+}
+
+.music-toggle.playing::before {
+  animation: musicPulse 2.2s cubic-bezier(0.25, 0.8, 0.25, 1) infinite;
+}
+
+@keyframes musicPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  60% {
+    transform: scale(1.42);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.42);
+    opacity: 0;
+  }
+}
+
+.music-icon-svg {
+  width: 22px;
+  height: 22px;
+  color: #ffffff;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+}
