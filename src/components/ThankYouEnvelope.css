@@ -68,8 +68,8 @@
 }
 
 .ty-main {
-  font-family: 'Great Vibes', 'Alex Brush', cursive;
-  font-size: 2.5rem;
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #1e3a8a;
   line-height: 1.15;
@@ -78,17 +78,17 @@
 }
 
 .ty-sub {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
   color: #2563eb;
   letter-spacing: 0.6px;
   margin-top: 4px;
 }
 
 .ty-names {
-  font-family: 'Alex Brush', 'Great Vibes', cursive;
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
   font-size: 1.35rem;
   color: #1d4ed8;
   letter-spacing: 0.5px;

@@ -18,7 +18,7 @@ export const weddingData = {
   wedding: {
     targetISO: "2026-12-25T19:00:00+05:30"
   },
-
+  
 
   scratch: {
     heading: "Scratch all three Circles",
@@ -63,18 +63,18 @@ export const weddingData = {
   compliments: {
     heading: "WITH BEST COMPLIMENTS FROM",
     members: [
-      { name: "Ansari Family", detail: "Groom's Father" }
+      { name: "Ansari Family", detail: " " }
     ],
     nearAndDear: "✦ Near & Dear ✦"
   },
 
   thankYou: {
     title: "Thank You",
-    message: "For your blessings & love"
+    message: "For your | blessings & love"
   },
 
   creator: {
-    instagram: " ",
-    tagline: " "
+    instagram: "@mazhar.x64",
+    tagline: "BUILT WITH ❤️ BY Mazhar Ansari"
   }
 }

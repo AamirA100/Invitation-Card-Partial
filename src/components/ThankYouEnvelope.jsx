@@ -50,15 +50,38 @@ export default function ThankYouEnvelope() {
           {/* Centered Typography Inside Wreath */}
           <div className="thankyou-card-text">
             <h2 className="ty-main">{thankYou.title}</h2>
-            <p className="ty-sub">{thankYou.message}</p>
+            <p className="ty-sub">For your <br /> blessings & love</p>
+            {/* <p className="ty-sub">{thankYou.message}</p> */}
             <p className="ty-names">
+            <br />
               {weddingData.groom.name.split(' ')[0]} &amp; {weddingData.bride.name.split(' ')[0]}
             </p>
           </div>
         </div>
 
         {/* Dedicated Modern Wedding Footer matching User Reference */}
-        
+        <footer className="wedding-footer">
+          <div className="footer-pill-card">
+            {/* Instagram Profile Row */}
+            <a
+              href="https://www.instagram.com/mazhar.x64?stkn=MTV1dWQ0c3Voc2M3dA=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-insta-link"
+              aria-label="Instagram Profile: @mazhar.x64"
+            >
+              <InstagramCameraIcon />
+              <span className="footer-insta-handle">@mazhar.x64</span>
+            </a>
+
+            {/* Built With Attribution */}
+            <p className="footer-built-with">
+              <span>BUILT WITH</span>
+              <span className="footer-red-heart" aria-hidden="true">❤️</span>
+              <span>BY MAZHAR ANSARI</span>
+            </p>
+          </div>
+        </footer>
       </div>
     </section>
   )

@@ -48,6 +48,7 @@ export default function OpeningScreen({ onOpen }) {
         // Video element may not have loaded metadata yet
       }
 
+      video.playbackRate = 2.5;
       const playPromise = video.play()
       if (playPromise !== undefined) {
         playPromise.catch((err) => {
@@ -200,7 +201,10 @@ export default function OpeningScreen({ onOpen }) {
           <div className={`text-overlay ${isNamesRevealed ? 'names-revealed' : ''}`}>
             {/* Stagger 1: Groom Name */}
             <h1 className="hero-name-stagger groom-stagger">
+            <br />
+            <br />
               {groomFirstName}
+              
             </h1>
 
             {/* Stagger 2: Ampersand */}
@@ -215,6 +219,7 @@ export default function OpeningScreen({ onOpen }) {
 
             {/* Stagger 4: Wedding Rings with blossom */}
             <div className="hero-rings-stagger" aria-hidden="true">
+            <br />
               <img
                 src="/images/ring1-Zb6HDysx.png"
                 alt="Golden Wedding Rings"

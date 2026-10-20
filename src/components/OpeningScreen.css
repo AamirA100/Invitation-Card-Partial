@@ -290,7 +290,7 @@
 
 /* Staggered Names Animation - Ultra Smooth Cinematic Entrance */
 .hero-name-stagger {
-  font-family: 'Great Vibes', 'Alex Brush', cursive;
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
   font-size: 3.4rem;
   font-weight: 400;
   line-height: 1.15;
@@ -313,12 +313,12 @@
 
 .hero-ampersand-stagger {
   font-family: 'Great Vibes', 'Alex Brush', cursive;
-  font-size: 2.8rem;
+  font-size: 2.0rem;
   color: #1d4ed8;
   text-shadow:
     0 0 20px rgba(255, 255, 255, 1),
     0 0 32px rgba(56, 189, 248, 0.85);
-  margin: -8px 0 -6px;
+  /* margin: 0px 0 -6px; */
   opacity: 0;
   transform: translate3d(0, 10px, 0) scale(0.65);
   will-change: opacity, transform;

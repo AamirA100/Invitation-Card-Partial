@@ -23,7 +23,7 @@ export default function ComplimentsSection() {
         <div className="comp-family-list">
           {compliments.members.map((member, index) => (
             <div key={index} className="comp-member">
-              <h3 className="comp-name">{member.name}</h3>
+              <h2 className="comp-name">{member.name}</h2>
               {member.detail && <p className="comp-role">{member.detail}</p>}
               {index < compliments.members.length - 1 && <div className="comp-divider" />}
             </div>

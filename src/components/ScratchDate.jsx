@@ -77,7 +77,7 @@ export default function ScratchDate({ onAllRevealed }) {
         {allRevealed && (
           <div className="scratch-blessing-note">
             <span className="note-star">🌸</span>
-            <span>Mark your calendar for this blessed day</span>
+            <span>Mark your calendar for this day</span>
             <span className="note-star">🌸</span>
           </div>
         )}

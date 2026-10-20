@@ -18,6 +18,35 @@ export default function App() {
   const [isOpened, setIsOpened] = useState(false)
   const audioRef = useRef(null)
 
+
+  useEffect(() => {
+    const html = document.documentElement
+    const body = document.body
+    const previousHtmlOverflow = html.style.overflow
+    const previousBodyOverflow = body.style.overflow
+    const previousHtmlOverscroll = html.style.overscrollBehavior
+    const previousBodyOverscroll = body.style.overscrollBehavior
+
+    if (!isOpened) {
+      html.style.overflow = 'hidden'
+      body.style.overflow = 'hidden'
+      html.style.overscrollBehavior = 'none'
+      body.style.overscrollBehavior = 'none'
+    } else {
+      html.style.overflow = ''
+      body.style.overflow = ''
+      html.style.overscrollBehavior = ''
+      body.style.overscrollBehavior = ''
+    }
+
+    return () => {
+      html.style.overflow = previousHtmlOverflow
+      body.style.overflow = previousBodyOverflow
+      html.style.overscrollBehavior = previousHtmlOverscroll
+      body.style.overscrollBehavior = previousBodyOverscroll
+    }
+  }, [isOpened])
+
   // Initialize Audio Controller with the local audio element
   useEffect(() => {
     if (audioRef.current) {

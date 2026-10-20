@@ -66,7 +66,7 @@ export default function Countdown() {
 
         <p className="countdown-footer-note">
           <span className="cd-dot">✦</span>
-          <span>Friday, 25th December 2026 · 7:00 PM</span>
+          <span>Friday,  7:30 PM onwards</span>
           <span className="cd-dot">✦</span>
         </p>
       </div>
