@@ -18,7 +18,7 @@ export const weddingData = {
   wedding: {
     targetISO: "2026-12-25T19:00:00+05:30"
   },
-  
+
 
   scratch: {
     heading: "Scratch all three Circles",
@@ -74,7 +74,7 @@ export const weddingData = {
   },
 
   creator: {
-    instagram: "@mazhar.x64",
-    tagline: "BUILT WITH ❤️ BY Mazhar Ansari"
+    instagram: " ",
+    tagline: " "
   }
 }
