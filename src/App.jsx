@@ -162,16 +162,16 @@ export default function App() {
           {/* Section 5: Interactive Scratch-to-Discover Wedding Date */}
           <ScratchDate />
 
-          {/* Section 6: Live Dynamic Countdown Timer */}
-          <Countdown />
-
-          {/* Section 7: Events & Venues with Google Maps buttons */}
+          {/* Section 6: Events & Venues with Google Maps buttons */}
           <EventsSection />
+
+          {/* Section 7: Live Dynamic Countdown Timer */}
+          <Countdown />
 
           {/* Section 8: Best Compliments From Family Members */}
           <ComplimentsSection />
 
-          {/* Section 10: Swan Floral Wreath Thank You & Modern Footer */}
+          {/* Section 9: Swan Floral Wreath Thank You & Modern Footer */}
           <ThankYouEnvelope />
         </main>
       </div>

@@ -63,10 +63,7 @@ export const weddingData = {
   compliments: {
     heading: "WITH BEST COMPLIMENTS FROM",
     members: [
-      { name: "Akbar Salam Ansari", detail: "Groom's Father" },
-      { name: "Shabana Akbar Ansari", detail: "Groom's Mother" },
-      { name: "Farzana Ansari", detail: "Sister" },
-      { name: "Farheen Ansari", detail: "Sister" }
+      { name: "Ansari Family", detail: "Groom's Father" }
     ],
     nearAndDear: "✦ Near & Dear ✦"
   },

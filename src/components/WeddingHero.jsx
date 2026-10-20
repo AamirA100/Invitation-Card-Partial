@@ -58,9 +58,9 @@ export default function WeddingHero({ isOpened }) {
               <span className="couple-ampersand">&amp;</span>
               <span className="bride-highlight">{weddingData.bride.name.split(' ')[0]}</span>
             </h2>
-            <p className="full-names-sub">
+            {/* <p className="full-names-sub">
               {weddingData.groom.name} &amp; {weddingData.bride.name}
-            </p>
+            </p> */}
           </div>
 
           {/* Bottom Corner Florals */}
